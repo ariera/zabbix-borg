@@ -1,0 +1,4 @@
+Defaults:zabbix !requiretty
+Cmnd_Alias ZABBIX_CMD_BORG = /etc/zabbix/scripts/borg_zabbix.sh
+zabbix   ALL = (other_user)  NOPASSWD: ALL
+zabbix   ALL = (root)        NOPASSWD: ZABBIX_CMD_BORG
