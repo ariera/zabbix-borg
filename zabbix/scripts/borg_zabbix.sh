@@ -47,7 +47,7 @@ borg_check(){
 #	case $(grep -ci "no problems found" $1/status.txt) in 2*) echo 0;; *) echo 1;; esac
 	if [[ ! -r "$1/status.txt" ]]
 	then
-		echo "${1}status.txt missing or not readable"
+		echo "${1}/status.txt missing or not readable"
 		exit 1
 	fi
 
