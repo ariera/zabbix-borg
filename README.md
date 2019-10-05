@@ -17,7 +17,7 @@ Step-By-Step:
 
 # Notes
 One-liner:
-`FILE="/etc/zabbix/zabbix_agentd.d/borg-zabbix.conf" wget -O "${FILE}" https://raw.githubusercontent.com/tschaerni/zabbix-borg/master/zabbix/zabbix_agentd.d/borg-zabbix.conf && chown root:root "${FILE}" && chmod 644 "{$FILE}" ; FILE="/etc/zabbix/scripts/borg_zabbix.sh" mkdir -p /etc/zabbix/scripts && wget -O "${FILE}" https://raw.githubusercontent.com/tschaerni/zabbix-borg/master/zabbix/scripts/borg_zabbix.sh && chown root:root "${FILE}" && chmod 755 "{$FILE}" ; FILE="/etc/sudoers.d/borg_zabbix" wget -O "${FILE}" https://raw.githubusercontent.com/tschaerni/zabbix-borg/master/sudoers.d/borg_zabbix && chown root:root "${FILE}" && chmod 440 "{$FILE}"`
+```FILE="/etc/zabbix/zabbix_agentd.d/borg-zabbix.conf" wget -O "${FILE}" https://raw.githubusercontent.com/tschaerni/zabbix-borg/master/zabbix/zabbix_agentd.d/borg-zabbix.conf && chown root:root "${FILE}" && chmod 644 "{$FILE}" ; FILE="/etc/zabbix/scripts/borg_zabbix.sh" mkdir -p /etc/zabbix/scripts && wget -O "${FILE}" https://raw.githubusercontent.com/tschaerni/zabbix-borg/master/zabbix/scripts/borg_zabbix.sh && chown root:root "${FILE}" && chmod 755 "{$FILE}" ; FILE="/etc/sudoers.d/borg_zabbix" wget -O "${FILE}" https://raw.githubusercontent.com/tschaerni/zabbix-borg/master/sudoers.d/borg_zabbix && chown root:root "${FILE}" && chmod 440 "{$FILE}"```
 
 Todo:
 1. Maybe add a host makro in zabbix for the location if the repositories
